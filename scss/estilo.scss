@@ -1,0 +1,412 @@
+@import "variables";
+@import "fonts";
+@import "media-queries";
+@import "nav";
+@import "animaciones";
+
+*{
+    margin: 0 0;
+}
+body{
+    width: 100vw;
+}
+/* FOOTER */
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 0;
+    width: 100%;
+    form{
+        display: flex;
+        .footer__formulario{
+            border-bottom: 1px solid black;
+            margin-right: 20px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            input{
+                border:none;
+            }
+        }
+        .footer__enviar{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+    .footer__redesSociales{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        img{
+            margin: 0 10px;
+        }
+    }
+}
+
+/* INDEX */
+.fondo{
+    background-position: top center;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+/* banner */
+header{
+overflow: hidden;
+width: 100vw;
+
+    .banner{
+
+        position: fixed;
+        height: 600px;
+        z-index: -1;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+
+    .banner__texto{
+        margin-top: 200px;
+        position: absolute;
+
+        .banner__animacionTitulo{
+            overflow: hidden;
+           
+            h1{
+                position: relative;
+            } 
+        }    
+        p{
+            color: white;
+            position: relative;
+            text-align: left;
+            width: 700px;
+            margin: 50px 0 0 75px;
+        }
+        
+        .btn--blanco{
+            a{
+                position: relative;
+                z-index: 2;
+            }
+        }
+    } 
+}
+
+.boton{
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.00001);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+}
+.boton:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.boton:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;    
+}
+
+/* Grilla del indice */
+.espacioIndice{
+    padding-top: 600px;
+    width: 100%;
+    .indice{
+        background-color: white;
+        .indice__fila{
+            display: flex;
+            justify-content: space-around;
+            section{
+/*                 width: 30vw; */
+                overflow: hidden;
+                box-sizing: border-box;
+                img{
+                    margin-top: 70px;
+                    height: auto;
+                    width: 100%;
+                }
+                h4{
+                    color: black;
+                    padding-top:10px;
+                }
+                p{
+                    width: 100%;
+                    padding-top:10px;
+                }
+                .btn--naranja{
+                    margin: 20px 0;
+                }
+                .btn--naranja a{
+                    font-weight: bold;
+                    color: $naranja;
+                    position: relative;
+                    z-index: 3;
+                }  
+            }
+        }
+    }
+}
+/* Banner de frase */
+.indice__frase{
+	background-color: $verdeClaro;
+    height: 300px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .indice__columnas{
+        display: flex;
+        justify-content:space-between;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .indice__fraseTexto{
+            margin-left: 40px;
+            h3{
+                margin-top: 50px;
+                font-weight: normal;
+                color:white;
+                line-height: 40px;
+            }
+            h4{
+                color:white;
+                margin: 10px 0;
+            }
+        }
+        .indice__estampado{
+            height: auto;
+            width: 50%;
+        }
+    }
+}
+
+/* HISTORIA */
+.historia{
+    background-color: $gris;
+    .historia__lineaTemporal{
+        display: grid;
+        padding-bottom: 100px;
+        .historia__circulos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                width: 35px;
+                height: 35px;  
+            }
+          }
+        .historia__linea{
+            border-left: 3px solid $verdeOscuro;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+}
+
+/* POR QUE GERMINAR */
+.porQueGerminar{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    .porQueGerminar__contenedor{
+        overflow: hidden;
+        li{
+            line-height: 30px;
+            list-style: circle;
+        }
+    }
+}
+
+
+/* TIPOS DE GERMINADOS*/
+.tiposGerminados{
+    display: flex;
+    justify-content: center;
+    li{
+        position: relative;
+        margin-left: 10px;
+    }
+    li:hover{
+        background-color:rgba(150, 187, 124, 1)
+    }
+    li:hover ul{
+        display:block;
+    }
+    .tiposGerminados__contenedor{
+        background-color: $gris;
+        padding: 20px;
+        box-sizing: border-box;
+        li{
+            display: block;
+        }
+    }
+}
+
+/* TIPOS DE SEMILLAS */
+
+.tipoSemillas{
+    box-sizing: border-box;
+    overflow: hidden;
+    .tipoSemillas__base{
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+    }
+ 
+    .tipoSemillas--cereales{
+        background-image: url(../multimedia/tiposdeSemillas/cereales.jpg);
+
+    }
+    .tipoSemillas--pseudo{
+        background-image: url(../multimedia/tiposdeSemillas/psudocereales.jpg);
+
+    }
+    .tipoSemillas--legumbres{
+        background-image: url(../multimedia/tiposdeSemillas/legumbres.jpg);
+
+    }
+    .tipoSemillas--oleaginosas{
+        background-image: url(../multimedia/tiposdeSemillas/oleaginosas.jpg);
+
+    }
+    .tipoSemillas--mucilaginosas{
+        background-image: url(../multimedia/tiposdeSemillas/mucilaginosas.jpg);
+
+    }
+    .tipoSemillas--hortalizas{
+        background-image: url(../multimedia/tiposdeSemillas/hortalizas.jpeg);
+
+    }
+    .tipoSemillas__animacion{
+        overflow: hidden;
+        p{
+            line-height: 30px;
+            background-color: $gris;
+        }
+    }
+}
+
+/* METODOS */
+.fondoGris{
+    background-color: $gris;
+    h1{
+        margin-bottom: 40px;
+    }
+    .metodos{
+        display: flex;
+        padding-bottom: 50px;
+        width: 90vw;
+        .metodos__texto{
+            .metodos__valoracion{
+                display: flex;
+                align-items: flex-start;
+                img{
+                    padding-top: 5px;
+                }
+                p{ 
+                    margin-left: 10px;
+                }
+            }
+         }
+    }
+    .tips{
+        width: 90vw;
+        li{
+            line-height: 30px;
+            list-style: circle;
+            margin-top: 10px;
+        }
+    }
+}
+
+/* SEMILLAS */
+.semillas{
+    img{
+        cursor: pointer;
+    }
+}
+
+/* RECETAS */
+.bannerRecetas{
+    padding-top: 350px;
+    background-image: url(../multimedia/recetas/bannerRecetas.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.receta{
+    border: solid 2px $gris;
+    display: flex;
+    margin-top: 50px;
+    width: 90vw;
+    .receta__texto{
+        padding: 30px 30px 0 30px;
+    }
+}
+
+
+/* PAGINAS */
+.paginas{
+    margin: 50px 5vw 30px 0;
+    .pagination > li > a
+    {
+        background-color: white;
+        color: $verdeOscuro;
+    }
+
+    .pagination > li > a:focus,
+    .pagination > li > a:hover,
+    .pagination > li > span:focus,
+    .pagination > li > span:hover
+    {
+        color: $verdeOscuro;
+        background-color: #eee;
+        border-color: #ddd;
+    }
+
+    .pagination > .active > a
+    {
+        color: white;
+        background-color: $verdeOscuro;
+        border: solid 1px $verdeOscuro;
+    }
+
+    .pagination > .active > a:hover
+    {
+        background-color: $verdeOscuro;
+        border: solid 1px $verdeOscuro;
+    }
+    
+}
+
+
+
+
+
+
+

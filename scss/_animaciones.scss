@@ -1,0 +1,132 @@
+/*MENU */
+.nav__lista a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -8px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $verdeOscuro;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0; 
+}
+
+/* FOOTER */
+@keyframes abajo{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.footer__animacion{
+    animation-name: abajo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+/* INDEX */
+/* Banner */
+.banner{
+    animation-name: abajo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.banner__texto{
+    @keyframes titulo{
+        0% {transform:translatey(20vh)}
+        100% {transform:translatey(0)}
+    }
+    h1{
+        animation-name: titulo;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+
+
+    .banner__animacionParrafo{
+        animation-name: abajo;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+    .btn--blanco:before{
+        transition: all 0.3s;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .btn--blanco:after {
+        opacity: 0;
+        transition: all 0.3s;
+        border: 1px solid rgba(255,255,255,0.5);
+        transform: scale(1.2,1.2);
+    }
+}
+
+/* Grilla del Índice */
+.espacioIndice{
+    animation-name: abajo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+
+    .btn--naranja:before{
+        transition: all 0.3s;
+        background-color: rgba(226, 126, 16,0.1);
+    }
+    .btn--naranja:after {
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(226, 126, 16,0.5);
+    transform: scale(1.2,1.2);
+    }
+}
+
+.boton{
+    transition: all 0.5s;
+}
+.boton:hover:before{
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.boton:hover:after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+/* HISTORIA */
+
+.historia__circulos img:hover{
+    transform: scale(1.5);
+}
+.historia--china:hover{
+    transform: scale(1.05);
+}
+.historia--esnia:hover{
+    transform: scale(1.05);
+}
+.historia--occidente:hover{
+    transform: scale(1.05);
+}
+.historia--eeuu:hover{
+    transform: scale(1.05);
+}
+.historia--hunzas:hover{
+    transform: scale(1.05);
+}
+.historia--ann:hover{
+    transform: scale(1.05);
+}
+
+/* SEMILLAS */
+.semillas{
+    img:hover{
+        transform: scale(1.05);
+    }
+}

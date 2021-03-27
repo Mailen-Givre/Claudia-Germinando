@@ -1,0 +1,244 @@
+/*MENU*/
+
+.nav {
+    position: sticky;
+    background-color: white;
+    width:100%;
+    padding: 20px 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    img{
+        margin-left: 75px;
+    }
+    .nav__contenedor{
+        display: flex;
+        justify-content: space-between;
+        .nav__lista{
+            display: flex;
+            justify-content: flex-end;
+            align-self: center;
+            margin-right: 50px;
+            a {
+                color:black;
+            }
+            a:hover{
+                color: $verdeOscuro;
+            }
+            .active a{
+                color: $naranja;
+            }
+            a:hover:after { 
+                width: 100%; 
+                left: 0; 
+            }
+            .nav__link{
+                position: relative;
+                text-align: center;
+                padding: 0 15px;
+            
+                .nav__sublista{
+                    position: absolute;
+                    display: none;
+                    padding: 10px 0;
+
+                    .nav__sublink{
+                        display: block;
+                        text-align: left;
+                        padding-left: 15px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .nav__link:hover .nav__sublista{
+                display: block;
+                width: 200px;
+                margin-left: -15px;
+                background-color: white;
+            } 
+        }
+    }
+}
+
+.ancla{
+    padding-top: 100px; 
+    margin-top: -100px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+    .navDesktop{
+        display: none;
+    }
+    .nav{
+        img{
+            width: 40vw;
+            margin: 0;
+            padding-left: 18px;
+        }
+        .nav__contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+    
+            .nav__lista {
+                text-align: center;
+                display: none;
+                margin: 20px 0 0 0;
+                padding: 0;
+                 a {
+                    display: block;
+                    border-bottom: 1px solid $verdeOscuro;
+                    padding-left: 0;
+                    text-align: right;
+                    margin: 0;
+                }
+            }
+        } 
+    }
+}
+@media only screen and (min-width: 500px) {
+    .navCelular{
+        display: none;
+    }
+}
+
+/* MENU HAMBURGUESA */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 20px;
+  
+  z-index: 2;
+  
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: $verdeOscuro;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 3; 
+  
+}
+
+/* menu hamburguesa lineas */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 2;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* Transformacion a X */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/* Ocultar la linea del medio */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* La ultima en la otra direccion */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* arriba a la izquierda */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/* deslizar desde la izquierda */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* Logo */
+#logo{
+    float: right;
+    margin: 30px 20px 0 0;
+}
+
+.navCelular{
+    padding-bottom: 100px;
+    background-color: white;
+}

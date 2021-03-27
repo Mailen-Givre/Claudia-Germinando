@@ -1,0 +1,83 @@
+/*TIPOGRAFIAS*/
+
+h1{
+    font-family: $fuente;
+    font-weight: bold;
+    font-size: 52px;
+    color: $verdeOscuro;
+    padding: 40px 0 0 75px;
+}
+h2{
+    font-family: $fuente;
+    font-weight: bold;
+    font-size: 40px;
+    color: $naranja;
+}
+h3{
+    font-family: $fuente;
+    font-weight: bold;
+    font-size: 30px;
+    color: $naranja;    
+}
+h4{
+    font-family: $fuente;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+p{
+    font-family: $fuente;
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+}
+a{
+    font-family: $fuente;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    text-decoration: none !important;
+}
+li {
+    font-family: $fuente;
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    list-style: none;
+}
+.negrita{
+    font-weight: bold;
+}
+
+.h1--blanco{
+    color: white;
+}
+.nav__btn{
+    font-size: 26px; 
+}
+.nav__sublista{
+    line-height: 27px;
+}
+.h3--blanco-n{
+    margin-top: 50px;
+    font-weight: normal;
+    color:white;
+    line-height: 50px;
+}
+.h--verde{
+    color:$verdeClaro;
+}
+.h--blanco{
+    color: white;
+    padding: 30px 0 30px 75px;
+}
+
+.h--top{
+    position: absolute;
+    top: 0px;
+}
+
+.lista li{
+    list-style: circle;
+}
+

@@ -1,0 +1,377 @@
+/* FOOTER */
+@media only screen and (max-width: 500px) {
+    form{
+        flex-direction: column;
+        .footer__formulario{
+            margin-bottom: 15px;
+        }
+    }
+
+/* INDEX */
+
+    .bannerCelu{
+        background-image: url(../multimedia/index/bannerHome2.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header{
+    overflow: hidden;
+    width: 100vw;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .fondo{
+        background-image: url(../multimedia/index/bannerHome2.jpg);
+    }
+}
+/* Banner */
+@media only screen and (max-width: 500px) {
+    .banner{
+        height: 300px;
+        width: 100%;
+    }
+    .banner__texto{
+        margin-top: 150px;
+        width: 100%;
+        h1{
+            width: 95vw;
+            margin: 0 10px;
+            padding: 0;
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+        display: none;
+        }
+        .btn--blanco{
+            margin: 30px 0 30px 130px;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .banner__texto h1{
+        width: 600px;
+    }
+    .btn--blanco{
+    margin: 20px 0 30px 75px;
+    } 
+}
+
+/* Grilla del Indice */
+@media only screen and (max-width: 500px) {
+    .espacioIndice{
+        padding-top: 300px;
+        .indice__fila{
+            flex-direction: column;
+            section{
+                width: 90vw;
+                margin-left: 5vw;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 500px) {
+    .indice__fila{
+        section{
+            width: 30vw;
+        }
+    }
+}
+ 
+/* Banner de frase */
+@media only screen and (max-width: 500px) {  
+    .indice__frase{
+        h3{
+        width: 80vw;
+        size: 18px;
+        margin-top: 30px;
+        line-height: 30px;
+        }
+        .indice__estampado{
+            display: none;
+        }   
+    }
+}
+
+/* HISTORIA */
+@media only screen and (min-width: 500px) {
+    .historia{
+        .historia__lineaTemporal{
+            margin: 0 75px;
+            grid-template-columns: repeat(3);
+            grid-gap: 30px;
+            width: 40vw; 
+            .historia--china{
+                grid-column: 3;
+                grid-row: 1;  
+            }
+            .historia--esnia{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .historia--occidente{
+                grid-column: 3;
+                grid-row: 3;
+            }
+            .historia--eeuu{
+                grid-column: 1;
+                grid-row: 4;
+            }
+            .historia--hunzas{
+                grid-column: 3;
+                grid-row: 5;
+            }
+            .historia--ann{
+                grid-column: 1;
+                grid-row: 6;
+            }
+            .historia__circulos{
+                grid-column: 2;
+                grid-row: 1/7;
+                margin: 300px 0;
+            }
+    
+            .historia__linea{
+                grid-column: 2;
+                grid-row: 1/7;
+                margin: 317.5px 0 317.5px 17.5px;
+            }
+            p{
+                width: 40vw;
+            }
+            .historia__imgTemporal{
+            width: 40vw; 
+            }
+        }   
+    }
+}
+@media only screen and (max-width: 500px) {
+    h1{
+        padding-left: 18px;
+    }
+    .historia__lineaTemporal{
+        grid-template-columns: repeat(2);
+        grid-gap: 10px;
+        margin: 0 18px;
+        width: 80vw; 
+        .historia--china{
+            grid-column: 2;
+            grid-row: 1;  
+        }
+        .historia--esnia{
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .historia--occidente{
+            grid-column: 2;
+            grid-row: 3;
+        }
+        .historia--eeuu{
+            grid-column: 2;
+            grid-row: 4;
+        }
+        .historia--hunzas{
+            grid-column: 2;
+            grid-row: 5;
+        }
+        .historia--ann{
+            grid-column: 2;
+            grid-row: 6;
+        }
+        .historia__circulos{
+            grid-column: 1;
+            grid-row: 1/7;
+            margin: 140px 0;
+        }
+        .historia__linea{
+            grid-column: 1;
+            grid-row: 1/7;
+            margin: 157.5px 0 157.5px 17.5px;
+        }
+        h2{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        p{
+            width: 80vw;
+        }
+        .historia__imgTemporal{
+            width: 80vw; 
+            }
+    }
+} 
+
+/* POR QUE GERMINAR */
+@media only screen and (min-width: 500px) {
+    .porQueGerminar{
+        margin-left: 75px;
+        li{
+            width: 40vw;
+        }
+        h3{
+            padding: 100px 0 15px;
+        }
+        img{
+            margin-top: 30px;
+            width: 40vw;
+        }
+        .porQueGerminar__hamburguesa{
+            padding-top: 250px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .porQueGerminar{
+        flex-direction: column;
+        margin-left: 18px;
+        li{
+            width: 80vw;
+        }
+        h3{
+            padding-top: 50px;
+        }
+        img{
+            width: 80vw;
+            margin: 30px 0 0 18px;
+        }
+        .porQueGerminar__hamburguesa{
+            padding-top: 0;
+        }
+    }
+}
+
+/* TIPOS DE GERMINADOS */
+@media only screen and (min-width: 500px) {
+    .tiposGerminados{
+        margin: 50px 0 300px;
+        width: 90vw;
+        .imgDesktop{
+            display: block;
+        }
+        .imgPhone{
+            display: none;
+        }
+        .tiposGerminados__contenedor{
+            position: absolute;
+            display: none;
+            h3{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .tiposGerminados{
+        flex-direction: column;
+        overflow: hidden;
+        width: 80vw;
+        margin-bottom: 0;
+        margin-top: 50px;
+        padding-left: 18px;
+        .imgDesktop{
+            display: none;
+        }
+        .imgPhone{
+            display: block;
+        }
+        .tiposGerminados__contenedor{
+            display: block;
+            position: relative;
+            width: 80vw;
+            border-top:solid 5px $verdeClaro;
+            margin-bottom: 50px;
+            h3{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/* TIPOS DE SEMILLAS */
+@media only screen and (min-width: 500px) {
+    .tipoSemillas{
+        margin: 0 75px;
+        p{
+            padding: 50px 75px 100px 75px;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .tipoSemillas{
+        margin: 0 0;
+        p{
+            padding: 50px 18px;
+        }
+    }
+}
+
+/* METODOS */
+@media only screen and (max-width: 500px) {
+    .metodos{
+        flex-direction: column;
+        margin-left: 18px;
+        .metodos__texto{
+            margin-left: 0;
+            img{
+                width: 10vw;
+            }
+        }
+    }
+    .tips{
+        padding: 0 0 50px 18px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .metodos{
+        margin-left: 75px;
+        .metodos__texto{
+            margin-left: 40px;
+            img{
+                width: 1vw;
+            }
+        }
+    }
+    .tips{
+        padding: 0 0 50px 75px;
+    }
+}
+
+/* SEMILLAS */
+@media only screen and (max-width: 500px) {
+    .margen{
+        margin: 30px 0 0 18px;
+    }
+    .semillas{
+        img{
+            margin: 40px 0 0 18px;
+            width: 90vw;
+        }  
+    }
+}
+@media only screen and (min-width: 500px) {
+    .margen{
+        margin: 30px 0 0 75px;
+    }
+    .semillas{
+        img{
+            margin: 40px 0 0 75px;
+            width: 20vw;  
+        }
+    }
+}
+
+/* RECETAS */
+@media only screen and (max-width: 500px) {
+    .receta{
+        flex-direction: column;
+        margin-left: 18px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .receta{
+        margin-left: 75px;
+    }
+}

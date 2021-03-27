@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillas</title>
+    <link rel="icon" href="../multimedia/isologo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Cada semilla es diferente y el método necesario para germinarla varía. Algunas semillas no son aptas para consumirlas germinadas. Encontrá acá una lista de las aptas con su explicación y datos curiosos.">
+    <meta name="keywords" content="semillas, germinables, información, tipo de semilla, semilla, origen, germinación, método, propiedades, particularidades, aduki, alfalfa, almendras, amaranto, arvejas, avena, berro, brócoli, calabaza, cebolla, centeno, chia, coliflor, fenogreco, garbanzos, girasol, hinojo, lentejas, lino, maíz, mijo, mostaza, porotos, poroto, mung, puerro, quinoa, rabanito, repollo, rucula, sesamo, trebol, trigo, sarraceno, zanahoria">
+</head>
+<body>
+    <!-- Menu de navegación desktop-->
+    <nav class="nav navDesktop">
+        <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+        <div class="nav__contenedor">
+            <ul class="nav__lista">
+                <li class="nav__link"><a href="../index.html">Inicio</a></li>
+                <li class="nav__link"><a href="./historia.html">Historia</a></li>
+                <li class="nav__link"><a href="./por_que_germinar.html">¿Por qué germinar?</a></li>
+                <li class="nav__link"><a href="./tipos_de_germinados.html">Tipos de germinados</a></li>
+                <li class="nav__link"><a href="./tipos_de_semillas.html">Tipos de semillas</a>
+                    <ul class="nav__sublista">
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semCereales">Cereales</a></li>
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semPseudo">Pseudo-cereales</a></li>
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semLegumbres">Legumbres</a></li>
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semOleaginosas">Oleaginosas</a></li>
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semMucilaginosas">Mucilaginosas</a></li>
+                        <li class="nav__sublink"><a href="./tipos_de_semillas.html#semHortalizas">Hortalizas</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="./metodos.html">Métodos</a>
+                    <ul class="nav__sublista">
+                        <li class="nav__sublink"><a href="./metodos.html#bolsa">Bolsa de tela</a></li>
+                        <li class="nav__sublink"><a href="./metodos.html#apilable">Bandejas apilables</a></li>
+                        <li class="nav__sublink"><a href="./metodos.html#barro">Plato de barro</a></li>
+                        <li class="nav__sublink"><a href="./metodos2.html#reutilizable">Bandejas reutilizables</a></li>
+                        <li class="nav__sublink"><a href="./metodos2.html#colador">Colador</a></li>
+                        <li class="nav__sublink"><a href="./metodos2.html#frasco">Frasco de vidrio</a></li>
+                        <li class="nav__sublink"><a href="./metodos3.html#tierra">Germinar en tierra</a></li>
+                        <li class="nav__sublink"><a href="./metodos3.html#tips">Tips y otras yerbas</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="./semillas.html">Semillas</a></li>
+                <li class="nav__link"><a href="./recetas.html">Recetas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu de navegación celular-->
+    <nav class="navCelular" role="navigation">
+        <a id="logo" href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+        <div class="nav__contenedor" id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="nav__lista" id="menu">
+                <li class="nav__link"><a href="../index.html">Inicio</a></li>
+                <li class="nav__link"><a href="./historia.html">Historia</a></li>
+                <li class="nav__link"><a href="./por_que_germinar.html">¿Por qué germinar?</a></li>
+                <li class="nav__link"><a href="./tipos_de_germinados.html">Tipos de germinados</a></li>
+                <li class="nav__link"><a href="./tipos_de_semillas.html">Tipos de semillas</a></li>
+                <li class="nav__link"><a href="./metodos.html">Métodos</a></li>
+                <li class="nav__link"><a href="./semillas.html">Semillas</a></li>
+                <li class="nav__link"><a href="./recetas.html">Recetas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEMILLAS -->
+    <main>
+        <h1>Semillas</h1>
+        <p class="margen"><span class="negrita">Lista de semillas germinables:</span> hacé <span class="negrita">
+            click en la imagen</span> para obtener información sobre el tipo de semilla, origen, método de germinación, propiedades 
+            y particularidades.</p>
+        <div class="semillas">
+            <img data-toggle="modal" data-target="#puerro" src="../multimedia/semillas/puerro1.jpg" alt="puerro">
+            <img data-toggle="modal" data-target="#quinoa" src="../multimedia/semillas/quinoa1.jpg" alt="quinoa">
+            <img data-toggle="modal" data-target="#rabanito" src="../multimedia/semillas/rabanito1.jpg" alt="rabanito">
+            <img data-toggle="modal" data-target="#repollo" src="../multimedia/semillas/repollo1.jpg" alt="repolloColorado">
+            <img data-toggle="modal" data-target="#rucula" src="../multimedia/semillas/rucula1.jpg" alt="rucula">
+            <img data-toggle="modal" data-target="#sesamo" src="../multimedia/semillas/sesamo1.jpg" alt="sesamo">
+            <img data-toggle="modal" data-target="#trebol" src="../multimedia/semillas/trebol1.jpg" alt="trebolRojo">
+            <img data-toggle="modal" data-target="#trigo" src="../multimedia/semillas/trigo1.jpg" alt="trigo">
+            <img data-toggle="modal" data-target="#trigoSarraceno" src="../multimedia/semillas/trigoSarraceno1.jpg" alt="trigoSarraceno">
+            <img data-toggle="modal" data-target="#zanahoria" src="../multimedia/semillas/zanahoria1.jpg" alt="zanahoria">
+            
+        </div>
+    </main>
+
+    <!-- modal puerro -->
+    <div class="modal fade" id="puerro" tabindex="-1" role="dialog" aria-labelledby="puerroLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="puerroLabel">PUERRO:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p><span class="negrita">Tipo de semilla:</span> hortaliza. </p>
+            <p><span class="negrita">Origen:</span> No se sabe a ciencia cierta de donde proviene el puerro, aunque parece ser que se originó en el Mediterráneo oriental y en Oriente Próximo, 
+                donde ya era cultivado hace unos 4000 años. Era una hortaliza ya cultivada por los egipcios y hebreos. Los romanos lo introdujeron en Gran Bretaña, donde fue muy apreciado. 
+                Durante la Edad Media el puerro fue uno de los alimentos más populares en Europa. </p>
+            <p><span class="negrita">Métodos de germinación:</span>  frasco, bolsa,  bandeja. </p>
+            <p><span class="negrita">Propiedades:</span>   aporta minerales y vitaminas y contiene un aceite esencial que favorece la digestión y limpia el estómago e intestino de hongos y bacterias. </p>
+            <p><span class="negrita">Particularidades:</span> los brotes son tiernos, pero con el mismo sabor picante y fuerte del puerro. Tardan unos 12 días en crecer para ser cosechados.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal quinoa -->
+    <div class="modal fade" id="quinoa" tabindex="-1" role="dialog" aria-labelledby="quinoaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quinoaLabel">QUINOA:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> pseudo-cereal. </p>
+                <p><span class="negrita">Origen:</span> La quinua es una planta andina que se originó en los alrededores del lago Titicaca de Perú y Bolivia. 
+                    La quinua fue cultivada y utilizada por las civilizaciones prehispánicas y reemplazada por los cereales a la llegada de los españoles, 
+                    a pesar de constituir un alimento básico de la población de ese entonces. La evidencia histórica disponible señala que su domesticación 
+                    por los pueblos de América puede haber ocurrido entre los años 3.000 y 5.000 antes de Cristo. Existen hallazgos arqueológicos de quinua 
+                    en tumbas de Tarapacá, Calama y Arica, en Chile, y en diferentes regiones del Perú. A la llegada de los españoles, la quinua tenía un 
+                    desarrollo tecnológico apropiado y una amplia distribución en el territorio Inca y fuera de él. El primer español que reporta el cultivo 
+                    de quinua fue Pedro de Valdivia, quien al observar los cultivos alrededor de Concepción menciona que, entre otras plantas, los indios 
+                    siembran también la quinua para su alimentación. </p>
+                <p><span class="negrita">Métodos de germinación:</span> Conviene germinarla en bandeja o plato de cerámica</p>
+                <p><span class="negrita">Propiedades:</span> más proteínas que los cereales y más completas</p>
+                <p><span class="negrita">Particularidades:</span> Existe la variedad roja, blanca y negra. No dejarla crecer mucho para que no se vuelva amarga ni se malogre. 
+                    Lavar mucho las semillas por la saponina y no dejarlos en remojo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal rabanito -->
+    <div class="modal fade" id="rabanito" tabindex="-1" role="dialog" aria-labelledby="rabanitoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rabanitoLabel">RABANITO:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> crucífera. </p>
+                <p><span class="negrita">Origen:</span> Se considera a China como el lugar de origen de los rábanos, aunque este es un dato que no se ha determinado de forma concluyente. Sin embargo, sí se sabe que los egipcios y babilonios ya lo consumían hace más de 4.000 años. Parece que fue hacia el año 400 a.C., cuando comenzó a consumirse en China y Corea.
+                    Métodos de germinación: Se cultivan en bandeja. Son de fácil cultivo.</p>
+                <p><span class="negrita">Métodos de germinación:</span> Conviene germinarla en bandeja o plato de cerámica</p>
+                <p><span class="negrita">Propiedades:</span> Ayuda a la digestión de otros alimentos al aumentar la producción de bilis. (LM)</p>
+                <p><span class="negrita">Particularidades:</span> su sabor es picante.Desarrolla mucha clorofila.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal repollo -->
+    <div class="modal fade" id="repollo" tabindex="-1" role="dialog" aria-labelledby="repolloLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="repolloLabel">REPOLLO COLORADO (MORADO) O COL LOMBARDA:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> crucífera. </p>
+                <p><span class="negrita">Origen:</span>  originaria de Europa central, aunque actualmente se cultiva y se encuentra en todos los países. 
+                    En el siglo XVI su cultivo se extendió Inglaterra y Francia, y ya en el siglo XVII se extendió a toda Europa.</p>
+                <p><span class="negrita">Métodos de germinación:</span> bandeja.</p>
+                <p><span class="negrita">Propiedades:</span> Los brotes de Repollo Morado, contienen propiedades benéficas de defensa del organismo, virtudes digestivas y reconstituyentes gracias a su alto contenido de vitaminas y sales minerales. La col lombarda nos nutre con compuestos azufrados y nos da protección frente a infecciones por bacterias, virus y hongos. La lombarda es una buena idea incluirla en las dietas de personas que padecen afecciones respiratorias, catarros y bronquitis.
+                    Los brotes de col, contienen además Glutaminas, unos aminoácidos que favorecen la formación de nuevos tejidos, regeneran la mucosa intestinal, previenen la pérdida de masa muscular y son unos potentes antiácidos naturales.</p>
+                <p><span class="negrita">Particularidades:</span> sustancias a destacar de la col lombarda germinada, son las antocianinas. Son éstos flavonoides los que le dan ese color morado a la col.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal rucula -->
+    <div class="modal fade" id="rucula" tabindex="-1" role="dialog" aria-labelledby="ruculaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ruculaLabel">RÚCULA (JARAMANGO, ARÚGULA, ORIGA, RUCA O ROQUETA)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> hortaliza crucífera. </p>
+                <p><span class="negrita">Origen:</span> Es originaria de la región del Mediterráneo. Se encuentra en el centro y este de España, el resto del sur de Europa, norte de África y oeste de Asia.</p>
+                <p><span class="negrita">Métodos de germinación:</span> bandeja. No dejar en remojo porque es mucilaginosa. Proceso de 4 a 5 días. (LM).</p>
+                <p><span class="negrita">Propiedades:</span> Protege la salud como todas las crucíferas.</p>
+                <p><span class="negrita">Particularidades:</span> Tiene un sabor picante muy marcado. (VC)</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal sesamo -->
+    <div class="modal fade" id="sesamo" tabindex="-1" role="dialog" aria-labelledby="sesamoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sesamoLabel">SÉSAMO:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> oleaginosa. </p>
+                <p><span class="negrita">Origen:</span> India y de África.</p>
+                <p><span class="negrita">Métodos de germinación:</span> en bandeja.</p>
+                <p><span class="negrita">Propiedades:</span> aumentan sus grasas que son saludables. El magnesio, calcio y hierro se hacen más asimilables como así también las proteínas.</p>
+                <p><span class="negrita">Particularidades:</span> Se consume apenas germinada porque luego se vuelve muy amarga. Se puede consumir cruda o ligeramente tostada.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal trebol -->
+    <div class="modal fade" id="trebol" tabindex="-1" role="dialog" aria-labelledby="trebolLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="trebolLabel">TRÉBOL ROJO:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> legumbre. </p>
+                <p><span class="negrita">Origen:</span> Mediterráneo y Sur de Europa.</p>
+                <p><span class="negrita">Métodos de germinación:</span> bandeja, frasco o bolsa.</p>
+                <p><span class="negrita">Propiedades:</span> En el caso de los brotes de trébol rojo, éstos son usados para disminuir los síntomas de la menopausia, ya que aportan una cantidad significativa de estrógenos, las hormonas que en esa fase de la mujer escasean y que provocan bruscos cambios anímicos.
+                    Su color y sabor se parece bastante al brote de la alfalfa, tienen un tono amarillento verdoso y con un toque amargo. Son buena fuente proteica y de fibra, vitaminas A, B, C Y K. Su ingesta aporta antioxidantes y además energiza. También aporta una variedad de minerales como calcio, hierro, magnesio, fósforo, selenio y zinc.</p>
+                <p><span class="negrita">Particularidades:</span> Tiene un sabor similar a la alfalfa. El trébol es un poco más picante. (MB)</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- modal trigo -->
+     <div class="modal fade" id="trigo" tabindex="-1" role="dialog" aria-labelledby="trigoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="trigoLabel">TRIGO:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> cereal. </p>
+                <p><span class="negrita">Origen:</span> el cultivo se inició hace unos 10.000 años, y su origen se ha rastreado al sureste de lo que hoy es Turquía. Su nombre fue Einkorn (Triticum monococcum) 
+                    y generalmente se describe como una planta diploide, es decir con dos juegos de cromosomas.</p>
+                <p><span class="negrita">Métodos de germinación:</span> bandeja, frasco y bolsa. En tierra para hacer pasto de trigo.</p>
+                <p><span class="negrita">Propiedades:</span> aumenta la vitamina C y la vitamina E.. El calcio se hace más asimilable.</p>
+                <p><span class="negrita">Particularidades:</span> Se puede consumir apenas germinado como grano. Crudo, tostado o al vapor. Si se deja crecer en tierra, se convierte en pasto de trigo. En este caso sólo se consume el jugo por la clorofila.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- modal trigo sarraceno -->
+     <div class="modal fade" id="trigoSarraceno" tabindex="-1" role="dialog" aria-labelledby="trigoSarracenoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="trigoSarracenoLabel">TRIGO SARRACENO:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> pseudo-cereal. </p>
+                <p><span class="negrita">Origen:</span> Asia central.</p>
+                <p><span class="negrita">Métodos de germinación:</span>  Se germina en bandeja. No dejar en remojo e ir salpicando para que no se entorpezca la germinación. (PQC).</p>
+                <p><span class="negrita">Propiedades:</span> tiene aminoácidos que no existen en los cereales lo que hace que las proteínas sean completas.</p>
+                <p><span class="negrita">Particularidades:</span> Se consume apenas germinado. Se puede consumir crudo, tostado o al vapor.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- modal zanahoria -->
+     <div class="modal fade" id="zanahoria" tabindex="-1" role="dialog" aria-labelledby="zanahoriaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="zanahoriaLabel">ZANAHORIA:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="negrita">Tipo de semilla:</span> hortaliza. </p>
+                <p><span class="negrita">Origen:</span> Asia central y del Mediterráneo. Ha sido cultivada y consumida desde hace siglos por griegos y romanos. 
+                    Durante los primeros años de su cultivo, las raíces de la zanahoria eran de color violáceo, siendo a partir de 1700, cuando se seleccionaron
+                     las variedades naranjas.</p>
+                <p><span class="negrita">Métodos de germinación:</span> bandeja.</p>
+                <p><span class="negrita">Propiedades:</span> los microgreens de zanahoria son ricos en minerales, proteínas y vitaminas, contienen 6 veces más vitamina C que la raíz 
+                    y también tienen vitaminas K, A, B1, B2, B3, B6, B12, P, E , K, calcio, hierro y muchas fibras. También tiene propiedades de limpieza para la sangre, ganglios linfáticos,
+                     glándulas suprarrenales y propiedades antisépticas. Aporta clorofila.</p>
+                <p><span class="negrita">Particularidades:</span> es lenta la germinación. Se consume cuando sus hojas están bien verdes. (VC)</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGINAS -->
+    <nav class="paginas" aria-label="Page navigation">
+        <ul class="pagination pagination-lg justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="../paginas/semillas2.html" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="../paginas/semillas.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="../paginas/semillas2.html">2</a></li>
+          <li class="page-item active"><a class="page-link" href="../paginas/semillas3.html">3</a></li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <form>
+            <div class="footer__formulario">
+                <img src="../multimedia/footer/avatar.png" alt="avatar">
+                <input type="text" name="nombre"placeholder="Nombre"/>
+            </div>
+            <div class="footer__formulario">
+                <img src="../multimedia/footer/mail.png" alt="mail">
+                <input type="email" name="email" placeholder="Mail"/>
+            </div>
+            <input class="footer__enviar" type="submit" value="Enviar"/>
+        </form>
+        <div class="footer__redesSociales">
+            <img src="../multimedia/footer/youtube.png" alt="youtube">
+            <a href="https://www.instagram.com/claudiasterin_germinando/" target="_blank"><img src="../multimedia/footer/instagram.png" alt="instagram"></a>
+            <img src="../multimedia/footer/facebook.png" alt="facebook">
+            <img src="../multimedia/footer/pinterest.png" alt="pinterest">
+        </div>
+    </footer>
+
+    <!-- SRIPTS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

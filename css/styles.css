@@ -1,0 +1,942 @@
+@charset "UTF-8";
+/* Variables */
+/* Fonts */
+/*TIPOGRAFIAS*/
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  color: #67874D;
+  padding: 40px 0 0 75px; }
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #E27E10; }
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #E27E10; }
+
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; }
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: black; }
+
+a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  text-decoration: none !important; }
+
+li {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+  list-style: none; }
+
+.negrita {
+  font-weight: bold; }
+
+.h1--blanco {
+  color: white; }
+
+.nav__btn {
+  font-size: 26px; }
+
+.nav__sublista {
+  line-height: 27px; }
+
+.h3--blanco-n {
+  margin-top: 50px;
+  font-weight: normal;
+  color: white;
+  line-height: 50px; }
+
+.h--verde {
+  color: #96BB7C; }
+
+.h--blanco {
+  color: white;
+  padding: 30px 0 30px 75px; }
+
+.h--top {
+  position: absolute;
+  top: 0px; }
+
+.lista li {
+  list-style: circle; }
+
+/* FOOTER */
+@media only screen and (max-width: 500px) {
+  form {
+    flex-direction: column; }
+    form .footer__formulario {
+      margin-bottom: 15px; }
+  /* INDEX */
+  .bannerCelu {
+    background-image: url(../multimedia/index/bannerHome2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  header {
+    overflow: hidden;
+    width: 100vw; } }
+
+@media only screen and (min-width: 500px) {
+  .fondo {
+    background-image: url(../multimedia/index/bannerHome2.jpg); } }
+
+/* Banner */
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 300px;
+    width: 100%; }
+  .banner__texto {
+    margin-top: 150px;
+    width: 100%; }
+    .banner__texto h1 {
+      width: 95vw;
+      margin: 0 10px;
+      padding: 0;
+      font-size: 30px;
+      text-align: center; }
+    .banner__texto p {
+      display: none; }
+    .banner__texto .btn--blanco {
+      margin: 30px 0 30px 130px; } }
+
+@media only screen and (min-width: 500px) {
+  .banner__texto h1 {
+    width: 600px; }
+  .btn--blanco {
+    margin: 20px 0 30px 75px; } }
+
+/* Grilla del Indice */
+@media only screen and (max-width: 500px) {
+  .espacioIndice {
+    padding-top: 300px; }
+    .espacioIndice .indice__fila {
+      flex-direction: column; }
+      .espacioIndice .indice__fila section {
+        width: 90vw;
+        margin-left: 5vw; } }
+
+@media only screen and (min-width: 500px) {
+  .indice__fila section {
+    width: 30vw; } }
+
+/* Banner de frase */
+@media only screen and (max-width: 500px) {
+  .indice__frase h3 {
+    width: 80vw;
+    size: 18px;
+    margin-top: 30px;
+    line-height: 30px; }
+  .indice__frase .indice__estampado {
+    display: none; } }
+
+/* HISTORIA */
+@media only screen and (min-width: 500px) {
+  .historia .historia__lineaTemporal {
+    margin: 0 75px;
+    grid-template-columns: repeat(3);
+    grid-gap: 30px;
+    width: 40vw; }
+    .historia .historia__lineaTemporal .historia--china {
+      grid-column: 3;
+      grid-row: 1; }
+    .historia .historia__lineaTemporal .historia--esnia {
+      grid-column: 1;
+      grid-row: 2; }
+    .historia .historia__lineaTemporal .historia--occidente {
+      grid-column: 3;
+      grid-row: 3; }
+    .historia .historia__lineaTemporal .historia--eeuu {
+      grid-column: 1;
+      grid-row: 4; }
+    .historia .historia__lineaTemporal .historia--hunzas {
+      grid-column: 3;
+      grid-row: 5; }
+    .historia .historia__lineaTemporal .historia--ann {
+      grid-column: 1;
+      grid-row: 6; }
+    .historia .historia__lineaTemporal .historia__circulos {
+      grid-column: 2;
+      grid-row: 1/7;
+      margin: 300px 0; }
+    .historia .historia__lineaTemporal .historia__linea {
+      grid-column: 2;
+      grid-row: 1/7;
+      margin: 317.5px 0 317.5px 17.5px; }
+    .historia .historia__lineaTemporal p {
+      width: 40vw; }
+    .historia .historia__lineaTemporal .historia__imgTemporal {
+      width: 40vw; } }
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    padding-left: 18px; }
+  .historia__lineaTemporal {
+    grid-template-columns: repeat(2);
+    grid-gap: 10px;
+    margin: 0 18px;
+    width: 80vw; }
+    .historia__lineaTemporal .historia--china {
+      grid-column: 2;
+      grid-row: 1; }
+    .historia__lineaTemporal .historia--esnia {
+      grid-column: 2;
+      grid-row: 2; }
+    .historia__lineaTemporal .historia--occidente {
+      grid-column: 2;
+      grid-row: 3; }
+    .historia__lineaTemporal .historia--eeuu {
+      grid-column: 2;
+      grid-row: 4; }
+    .historia__lineaTemporal .historia--hunzas {
+      grid-column: 2;
+      grid-row: 5; }
+    .historia__lineaTemporal .historia--ann {
+      grid-column: 2;
+      grid-row: 6; }
+    .historia__lineaTemporal .historia__circulos {
+      grid-column: 1;
+      grid-row: 1/7;
+      margin: 140px 0; }
+    .historia__lineaTemporal .historia__linea {
+      grid-column: 1;
+      grid-row: 1/7;
+      margin: 157.5px 0 157.5px 17.5px; }
+    .historia__lineaTemporal h2 {
+      font-size: 20px;
+      margin-top: 20px; }
+    .historia__lineaTemporal p {
+      width: 80vw; }
+    .historia__lineaTemporal .historia__imgTemporal {
+      width: 80vw; } }
+
+/* POR QUE GERMINAR */
+@media only screen and (min-width: 500px) {
+  .porQueGerminar {
+    margin-left: 75px; }
+    .porQueGerminar li {
+      width: 40vw; }
+    .porQueGerminar h3 {
+      padding: 100px 0 15px; }
+    .porQueGerminar img {
+      margin-top: 30px;
+      width: 40vw; }
+    .porQueGerminar .porQueGerminar__hamburguesa {
+      padding-top: 250px; } }
+
+@media only screen and (max-width: 500px) {
+  .porQueGerminar {
+    flex-direction: column;
+    margin-left: 18px; }
+    .porQueGerminar li {
+      width: 80vw; }
+    .porQueGerminar h3 {
+      padding-top: 50px; }
+    .porQueGerminar img {
+      width: 80vw;
+      margin: 30px 0 0 18px; }
+    .porQueGerminar .porQueGerminar__hamburguesa {
+      padding-top: 0; } }
+
+/* TIPOS DE GERMINADOS */
+@media only screen and (min-width: 500px) {
+  .tiposGerminados {
+    margin: 50px 0 300px;
+    width: 90vw; }
+    .tiposGerminados .imgDesktop {
+      display: block; }
+    .tiposGerminados .imgPhone {
+      display: none; }
+    .tiposGerminados .tiposGerminados__contenedor {
+      position: absolute;
+      display: none; }
+      .tiposGerminados .tiposGerminados__contenedor h3 {
+        margin-bottom: 20px; } }
+
+@media only screen and (max-width: 500px) {
+  .tiposGerminados {
+    flex-direction: column;
+    overflow: hidden;
+    width: 80vw;
+    margin-bottom: 0;
+    margin-top: 50px;
+    padding-left: 18px; }
+    .tiposGerminados .imgDesktop {
+      display: none; }
+    .tiposGerminados .imgPhone {
+      display: block; }
+    .tiposGerminados .tiposGerminados__contenedor {
+      display: block;
+      position: relative;
+      width: 80vw;
+      border-top: solid 5px #96BB7C;
+      margin-bottom: 50px; }
+      .tiposGerminados .tiposGerminados__contenedor h3 {
+        margin-top: 10px; } }
+
+/* TIPOS DE SEMILLAS */
+@media only screen and (min-width: 500px) {
+  .tipoSemillas {
+    margin: 0 75px; }
+    .tipoSemillas p {
+      padding: 50px 75px 100px 75px; } }
+
+@media only screen and (max-width: 500px) {
+  .tipoSemillas {
+    margin: 0 0; }
+    .tipoSemillas p {
+      padding: 50px 18px; } }
+
+/* METODOS */
+@media only screen and (max-width: 500px) {
+  .metodos {
+    flex-direction: column;
+    margin-left: 18px; }
+    .metodos .metodos__texto {
+      margin-left: 0; }
+      .metodos .metodos__texto img {
+        width: 10vw; }
+  .tips {
+    padding: 0 0 50px 18px; } }
+
+@media only screen and (min-width: 500px) {
+  .metodos {
+    margin-left: 75px; }
+    .metodos .metodos__texto {
+      margin-left: 40px; }
+      .metodos .metodos__texto img {
+        width: 1vw; }
+  .tips {
+    padding: 0 0 50px 75px; } }
+
+/* SEMILLAS */
+@media only screen and (max-width: 500px) {
+  .margen {
+    margin: 30px 0 0 18px; }
+  .semillas img {
+    margin: 40px 0 0 18px;
+    width: 90vw; } }
+
+@media only screen and (min-width: 500px) {
+  .margen {
+    margin: 30px 0 0 75px; }
+  .semillas img {
+    margin: 40px 0 0 75px;
+    width: 20vw; } }
+
+/* RECETAS */
+@media only screen and (max-width: 500px) {
+  .receta {
+    flex-direction: column;
+    margin-left: 18px; } }
+
+@media only screen and (min-width: 500px) {
+  .receta {
+    margin-left: 75px; } }
+
+/*MENU*/
+.nav {
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  padding: 20px 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2; }
+  .nav img {
+    margin-left: 75px; }
+  .nav .nav__contenedor {
+    display: flex;
+    justify-content: space-between; }
+    .nav .nav__contenedor .nav__lista {
+      display: flex;
+      justify-content: flex-end;
+      align-self: center;
+      margin-right: 50px; }
+      .nav .nav__contenedor .nav__lista a {
+        color: black; }
+      .nav .nav__contenedor .nav__lista a:hover {
+        color: #67874D; }
+      .nav .nav__contenedor .nav__lista .active a {
+        color: #E27E10; }
+      .nav .nav__contenedor .nav__lista a:hover:after {
+        width: 100%;
+        left: 0; }
+      .nav .nav__contenedor .nav__lista .nav__link {
+        position: relative;
+        text-align: center;
+        padding: 0 15px; }
+        .nav .nav__contenedor .nav__lista .nav__link .nav__sublista {
+          position: absolute;
+          display: none;
+          padding: 10px 0; }
+          .nav .nav__contenedor .nav__lista .nav__link .nav__sublista .nav__sublink {
+            display: block;
+            text-align: left;
+            padding-left: 15px;
+            margin-bottom: 10px; }
+      .nav .nav__contenedor .nav__lista .nav__link:hover .nav__sublista {
+        display: block;
+        width: 200px;
+        margin-left: -15px;
+        background-color: white; }
+
+.ancla {
+  padding-top: 100px;
+  margin-top: -100px; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+  .navDesktop {
+    display: none; }
+  .nav img {
+    width: 40vw;
+    margin: 0;
+    padding-left: 18px; }
+  .nav .nav__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .nav .nav__contenedor .nav__lista {
+      text-align: center;
+      display: none;
+      margin: 20px 0 0 0;
+      padding: 0; }
+      .nav .nav__contenedor .nav__lista a {
+        display: block;
+        border-bottom: 1px solid #67874D;
+        padding-left: 0;
+        text-align: right;
+        margin: 0; } }
+
+@media only screen and (min-width: 500px) {
+  .navCelular {
+    display: none; } }
+
+/* MENU HAMBURGUESA */
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 20px;
+  z-index: 2; }
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease; }
+
+#menuToggle a:hover {
+  color: #67874D; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3; }
+
+/* menu hamburguesa lineas */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 2;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+/* Transformacion a X */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323; }
+
+/* Ocultar la linea del medio */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+/* La ultima en la otra direccion */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+/* arriba a la izquierda */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px; }
+
+/* deslizar desde la izquierda */
+#menuToggle input:checked ~ ul {
+  transform: none; }
+
+/* Logo */
+#logo {
+  float: right;
+  margin: 30px 20px 0 0; }
+
+.navCelular {
+  padding-bottom: 100px;
+  background-color: white; }
+
+/*MENU */
+.nav__lista a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -8px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #67874D;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0; }
+
+/* FOOTER */
+@keyframes abajo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.footer__animacion {
+  animation-name: abajo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s; }
+
+/* INDEX */
+/* Banner */
+.banner {
+  animation-name: abajo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+@keyframes titulo {
+  0% {
+    transform: translatey(20vh); }
+  100% {
+    transform: translatey(0); } }
+
+.banner__texto h1 {
+  animation-name: titulo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.banner__texto .banner__animacionParrafo {
+  animation-name: abajo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+.banner__texto .btn--blanco:before {
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.banner__texto .btn--blanco:after {
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2); }
+
+/* Grilla del Índice */
+.espacioIndice {
+  animation-name: abajo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+  .espacioIndice .btn--naranja:before {
+    transition: all 0.3s;
+    background-color: rgba(226, 126, 16, 0.1); }
+  .espacioIndice .btn--naranja:after {
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(226, 126, 16, 0.5);
+    transform: scale(1.2, 1.2); }
+
+.boton {
+  transition: all 0.5s; }
+
+.boton:hover:before {
+  opacity: 0;
+  transform: scale(0.5, 0.5); }
+
+.boton:hover:after {
+  opacity: 1;
+  transform: scale(1, 1); }
+
+/* HISTORIA */
+.historia__circulos img:hover {
+  transform: scale(1.5); }
+
+.historia--china:hover {
+  transform: scale(1.05); }
+
+.historia--esnia:hover {
+  transform: scale(1.05); }
+
+.historia--occidente:hover {
+  transform: scale(1.05); }
+
+.historia--eeuu:hover {
+  transform: scale(1.05); }
+
+.historia--hunzas:hover {
+  transform: scale(1.05); }
+
+.historia--ann:hover {
+  transform: scale(1.05); }
+
+/* SEMILLAS */
+.semillas img:hover {
+  transform: scale(1.05); }
+
+* {
+  margin: 0 0; }
+
+body {
+  width: 100vw; }
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px 0;
+  width: 100%; }
+  .footer form {
+    display: flex; }
+    .footer form .footer__formulario {
+      border-bottom: 1px solid black;
+      margin-right: 20px; }
+      .footer form .footer__formulario img {
+        width: 20px;
+        height: 20px; }
+      .footer form .footer__formulario input {
+        border: none; }
+    .footer form .footer__enviar {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      cursor: pointer; }
+  .footer .footer__redesSociales {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; }
+    .footer .footer__redesSociales img {
+      margin: 0 10px; }
+
+/* INDEX */
+.fondo {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* banner */
+header {
+  overflow: hidden;
+  width: 100vw; }
+  header .banner {
+    position: fixed;
+    height: 600px;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box; }
+  header .banner__texto {
+    margin-top: 200px;
+    position: absolute; }
+    header .banner__texto .banner__animacionTitulo {
+      overflow: hidden; }
+      header .banner__texto .banner__animacionTitulo h1 {
+        position: relative; }
+    header .banner__texto p {
+      color: white;
+      position: relative;
+      text-align: left;
+      width: 700px;
+      margin: 50px 0 0 75px; }
+    header .banner__texto .btn--blanco a {
+      position: relative;
+      z-index: 2; }
+
+.boton {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1e-05);
+  border: none;
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  width: 100px; }
+
+.boton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.boton:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+/* Grilla del indice */
+.espacioIndice {
+  padding-top: 600px;
+  width: 100%; }
+  .espacioIndice .indice {
+    background-color: white; }
+    .espacioIndice .indice .indice__fila {
+      display: flex;
+      justify-content: space-around; }
+      .espacioIndice .indice .indice__fila section {
+        /*                 width: 30vw; */
+        overflow: hidden;
+        box-sizing: border-box; }
+        .espacioIndice .indice .indice__fila section img {
+          margin-top: 70px;
+          height: auto;
+          width: 100%; }
+        .espacioIndice .indice .indice__fila section h4 {
+          color: black;
+          padding-top: 10px; }
+        .espacioIndice .indice .indice__fila section p {
+          width: 100%;
+          padding-top: 10px; }
+        .espacioIndice .indice .indice__fila section .btn--naranja {
+          margin: 20px 0; }
+        .espacioIndice .indice .indice__fila section .btn--naranja a {
+          font-weight: bold;
+          color: #E27E10;
+          position: relative;
+          z-index: 3; }
+
+/* Banner de frase */
+.indice__frase {
+  background-color: #96BB7C;
+  height: 300px;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .indice__frase .indice__columnas {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .indice__frase .indice__columnas .indice__fraseTexto {
+      margin-left: 40px; }
+      .indice__frase .indice__columnas .indice__fraseTexto h3 {
+        margin-top: 50px;
+        font-weight: normal;
+        color: white;
+        line-height: 40px; }
+      .indice__frase .indice__columnas .indice__fraseTexto h4 {
+        color: white;
+        margin: 10px 0; }
+    .indice__frase .indice__columnas .indice__estampado {
+      height: auto;
+      width: 50%; }
+
+/* HISTORIA */
+.historia {
+  background-color: #F1F1F1; }
+  .historia .historia__lineaTemporal {
+    display: grid;
+    padding-bottom: 100px; }
+    .historia .historia__lineaTemporal .historia__circulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .historia .historia__lineaTemporal .historia__circulos img {
+        width: 35px;
+        height: 35px; }
+    .historia .historia__lineaTemporal .historia__linea {
+      border-left: 3px solid #67874D; }
+    .historia .historia__lineaTemporal p {
+      padding-top: 10px; }
+
+/* POR QUE GERMINAR */
+.porQueGerminar {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw; }
+  .porQueGerminar .porQueGerminar__contenedor {
+    overflow: hidden; }
+    .porQueGerminar .porQueGerminar__contenedor li {
+      line-height: 30px;
+      list-style: circle; }
+
+/* TIPOS DE GERMINADOS*/
+.tiposGerminados {
+  display: flex;
+  justify-content: center; }
+  .tiposGerminados li {
+    position: relative;
+    margin-left: 10px; }
+  .tiposGerminados li:hover {
+    background-color: #96bb7c; }
+  .tiposGerminados li:hover ul {
+    display: block; }
+  .tiposGerminados .tiposGerminados__contenedor {
+    background-color: #F1F1F1;
+    padding: 20px;
+    box-sizing: border-box; }
+    .tiposGerminados .tiposGerminados__contenedor li {
+      display: block; }
+
+/* TIPOS DE SEMILLAS */
+.tipoSemillas {
+  box-sizing: border-box;
+  overflow: hidden; }
+  .tipoSemillas .tipoSemillas__base {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px; }
+  .tipoSemillas .tipoSemillas--cereales {
+    background-image: url(../multimedia/tiposdeSemillas/cereales.jpg); }
+  .tipoSemillas .tipoSemillas--pseudo {
+    background-image: url(../multimedia/tiposdeSemillas/psudocereales.jpg); }
+  .tipoSemillas .tipoSemillas--legumbres {
+    background-image: url(../multimedia/tiposdeSemillas/legumbres.jpg); }
+  .tipoSemillas .tipoSemillas--oleaginosas {
+    background-image: url(../multimedia/tiposdeSemillas/oleaginosas.jpg); }
+  .tipoSemillas .tipoSemillas--mucilaginosas {
+    background-image: url(../multimedia/tiposdeSemillas/mucilaginosas.jpg); }
+  .tipoSemillas .tipoSemillas--hortalizas {
+    background-image: url(../multimedia/tiposdeSemillas/hortalizas.jpeg); }
+  .tipoSemillas .tipoSemillas__animacion {
+    overflow: hidden; }
+    .tipoSemillas .tipoSemillas__animacion p {
+      line-height: 30px;
+      background-color: #F1F1F1; }
+
+/* METODOS */
+.fondoGris {
+  background-color: #F1F1F1; }
+  .fondoGris h1 {
+    margin-bottom: 40px; }
+  .fondoGris .metodos {
+    display: flex;
+    padding-bottom: 50px;
+    width: 90vw; }
+    .fondoGris .metodos .metodos__texto .metodos__valoracion {
+      display: flex;
+      align-items: flex-start; }
+      .fondoGris .metodos .metodos__texto .metodos__valoracion img {
+        padding-top: 5px; }
+      .fondoGris .metodos .metodos__texto .metodos__valoracion p {
+        margin-left: 10px; }
+  .fondoGris .tips {
+    width: 90vw; }
+    .fondoGris .tips li {
+      line-height: 30px;
+      list-style: circle;
+      margin-top: 10px; }
+
+/* SEMILLAS */
+.semillas img {
+  cursor: pointer; }
+
+/* RECETAS */
+.bannerRecetas {
+  padding-top: 350px;
+  background-image: url(../multimedia/recetas/bannerRecetas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.receta {
+  border: solid 2px #F1F1F1;
+  display: flex;
+  margin-top: 50px;
+  width: 90vw; }
+  .receta .receta__texto {
+    padding: 30px 30px 0 30px; }
+
+/* PAGINAS */
+.paginas {
+  margin: 50px 5vw 30px 0; }
+  .paginas .pagination > li > a {
+    background-color: white;
+    color: #67874D; }
+  .paginas .pagination > li > a:focus,
+  .paginas .pagination > li > a:hover,
+  .paginas .pagination > li > span:focus,
+  .paginas .pagination > li > span:hover {
+    color: #67874D;
+    background-color: #eee;
+    border-color: #ddd; }
+  .paginas .pagination > .active > a {
+    color: white;
+    background-color: #67874D;
+    border: solid 1px #67874D; }
+  .paginas .pagination > .active > a:hover {
+    background-color: #67874D;
+    border: solid 1px #67874D; }
